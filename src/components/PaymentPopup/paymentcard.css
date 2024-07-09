@@ -1,0 +1,93 @@
+.modal_Background {
+  position: fixed;
+  width: 100%;
+  background-color: #0000008f;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  padding: 3rem;
+}
+.payment-modal {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 1rem;
+}
+.payment-modal img {
+  height: 250px;
+}
+.payment-modal input {
+  width: 100%;
+  border: 1px solid var(--text);
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.payment-modal input::placeholder {
+  text-transform: uppercase;
+  color: var(--text);
+}
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.button-container .pay-now {
+  border: 1px solid rgb(13, 120, 13);
+  border-radius: 0.4rem;
+  color: var(--white);
+  background: rgb(13, 120, 13);
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 60%;
+}
+.button-container .pay-now:hover {
+  background-color: var(--white);
+  color: black;
+}
+.button-container .cancel {
+  border: 1px solid var(--bg);
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 40%;
+}
+.button-container .cancel:hover {
+  background: red;
+  color: var(--white);
+  border: transparent;
+}
+
+@media (max-width: 468px) {
+  .modal_Background {
+    padding: 1rem;
+  }
+  .payment-modal {
+    width: 100%;
+  }
+  .payment-modal img {
+    height: 200px;
+  }
+  .payment-modal input {
+    padding: 10px;
+  }
+
+  .button-container .pay-now {
+    padding: 0.5rem;
+  }
+  .button-container .cancel {
+    padding: 0.5rem;
+  }
+}

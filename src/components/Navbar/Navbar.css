@@ -1,0 +1,199 @@
+.child1-parent {
+  width: 100%;
+  background: var(--light-bg);
+  padding: 10px 0;
+}
+.child1 {
+  justify-content: space-between;
+  color: var(--white);
+}
+.child-right-text {
+  gap: 10px;
+}
+.child-right-text .icon {
+  color: var(--primary);
+  font-size: 30px;
+}
+.child-right-text p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.child-left-btn .auth-links {
+  gap: 10px;
+}
+.auth-Btn {
+  border-radius: 0 10px;
+  background: linear-gradient(93.25deg, #0098ff 4.45%, #7c34c8 93.88%);
+  color: var(--white);
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.auth-Btn:hover {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.signOut-btn {
+  gap: 1rem;
+}
+.signOut-btn .profile-icon {
+  color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  transition: 0.3s;
+}
+.signOut-btn .profile-icon .icon {
+  font-size: 1rem;
+  color: var(--primary);
+}
+.signOut-btn .profile-icon:hover {
+  border: 1px solid var(--white);
+}
+
+.signOut-btn .profile-icon:hover .icon {
+  color: var(--white);
+}
+
+/* ============================================== second main Header start  */
+
+.Navbar .logo {
+  width: 180px;
+  height: 60px;
+}
+/* Default styles for the navbar */
+.Navbar {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  align-items: center;
+  background-color: var(--light-bg);
+  color: white;
+  padding: 1rem;
+}
+
+/* Style for the navigation links */
+.nav {
+  gap: 5rem;
+}
+.nav-Links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-Links a {
+  color: var(--text);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.nav-Links a.active {
+  color: var(--primary);
+}
+.nav-Links a:hover {
+  color: var(--white);
+}
+.navClose {
+  display: none;
+}
+
+.cart-Icon {
+  gap: 1rem;
+  position: relative;
+}
+.cart-Icon .cart {
+  position: relative;
+}
+.cart-Icon .cart .icon {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+.cart-Icon .cart span {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: -0.2rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.humberger-Menu {
+  display: none;
+}
+
+/* Media query for tablet and smaller screens */
+@media (max-width: 968px) {
+  .nav-Links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 2rem;
+    z-index: 1;
+  }
+
+  .nav-Links.active {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .humberger-Menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navClose {
+    display: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .nav-Links.active .navClose {
+    display: block;
+  }
+}
+
+@media (max-width: 468px) {
+  .child-right-text p{
+    font-size: .7rem;
+  }
+  .Navbar {
+    padding: 1rem 0.5rem;
+  }
+  .Navbar .logo {
+    width: 150px;
+    height: 40px;
+  }
+  .cart-Icon .cart .icon {
+    font-size: 2.2rem;
+  }
+  .cart-Icon .cart span {
+    width: 17px;
+    height: 17px;
+    font-size: 0.7rem;
+  }
+}

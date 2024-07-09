@@ -1,0 +1,39 @@
+.offer-container {
+  background-image: url("../../assets/custom-offer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+}
+.offer-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.offer-container h2 {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.offer-container button {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  background: linear-gradient(93.25deg, #0098ff 4.45%, #7c34c8 93.88%);
+  padding: 0.5rem 1rem;
+  border-radius: 0 10px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 568px) {
+  .offer-container {
+    padding: 2rem 1rem;
+  }
+  .offer-container h1 {
+    font-size: 1.5rem;
+  }
+  .offer-container h2 {
+    font-size: 1rem;
+  }
+}

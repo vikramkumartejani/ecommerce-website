@@ -1,0 +1,121 @@
+.auth_container {
+  justify-content: center;
+  /* height: 100vh; */
+}
+.auth_form {
+  width: 420px;
+  background: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.auth_form .form_heading {
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+}
+.auth_container .auth_form img {
+  width: 50px;
+  height: 50px;
+  margin: 1rem auto;
+}
+.auth_container .auth_form label {
+  color: var(--text);
+  font-size: .9rem;
+  padding: 0.2rem 0;
+}
+.auth_container .auth_form .input-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg);
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: .7rem;
+}
+.auth_icon {
+  color: #03a9f4;
+  font-size: 1.2rem;
+}
+.auth_form input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.auth_container .auth_form .parent {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.auth_container .auth_form .parent .remember {
+  display: flex;
+  position: relative;
+  color: var(--text);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.auth_container .auth_form .parent .remember input {
+  width: auto;
+  margin-right: 0.3rem;
+}
+
+.auth_container .auth_form .child2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.auth_container .auth_form .child2:hover {
+  color: #03a9f4;
+}
+.auth_container .auth_form .auth_Btn {
+  background: var(--bg);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 1px solid transparent;
+  margin-bottom: 1rem;
+}
+.auth_container .auth_form .auth_Btn:hover {
+  border: 1px solid #03a9f4;
+  color: var(--text);
+}
+.auth_container .auth_form .auth_privacy {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.auth_container .auth_form .auth_privacy a {
+  color: var(--primary);
+  font-size: 1rem;
+}
+.auth_container .auth_form .auth_privacy a:hover {
+  color: #03a9f4;
+}
+
+/* =============================== errorMessage & successMessage */
+.errorMessage,
+.successMessage {
+  background-color: var(--bg);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+}
+.errorMessage {
+  border-left: 2px solid orange;
+  color: orange;
+}
+.successMessage {
+  border-left: 2px solid green;
+  color: rgb(31, 201, 31);
+}
+
+@media (max-width: 468px) {
+  .auth_form {
+    padding: 1rem;
+  }
+}

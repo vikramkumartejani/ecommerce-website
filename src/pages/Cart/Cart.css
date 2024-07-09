@@ -1,0 +1,145 @@
+.cart_container {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cart_data{
+  width: 100%;
+}
+.cart_data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody tr {
+  background-color: var(--light-bg);
+  border-bottom: 20px solid var(--bg);
+  text-align: center;
+}
+tbody tr td{
+  padding: 15px;
+  color: var(--white);
+}
+tbody tr td:nth-child(1){
+  width: 80px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+tbody tr td:nth-child(1):hover{
+  color: red;
+}
+tbody tr td:nth-child(2){
+  width: 120px;
+}
+tbody tr td:nth-child(3){
+  text-align: start;
+  width: 40%;
+}
+tbody tr td:nth-child(4){
+  text-align: start;
+  width: 25%;
+  text-align: center;
+}
+tbody tr td:nth-child(4) span{
+  margin-right: 20px;
+  font-size: 20px;
+}
+tbody tr td:nth-child(4) span:nth-child(1),
+tbody tr td:nth-child(4) span:nth-child(3){
+  cursor: pointer;
+}
+
+.cart-image {
+  width: 80px;
+  height: 80px;
+}
+
+.clearcart-Btn{
+  background-color: red;
+  color: var(--white);
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+.clearcart-Btn:hover{
+  background-color: var(--white);
+  color: black;
+
+}
+
+.checkout{
+  background-color: var(--light-bg);
+  color: var(--white);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  height: max-content;
+}
+.checkout p{
+  display: flex;
+  justify-content: space-between;
+  color: orange;
+}
+.checkout span{
+  color: var(--white);
+}
+.checkout a{
+  width: 100%;
+  background-color: var(--white);
+  text-align: center;
+  padding: .5rem;
+  border-radius: .2rem;
+  color: black;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+.checkout a:hover{
+  background-color: var(--text);
+  color: var(--white);
+}
+
+.emptycart_container{
+  justify-content: center;
+  color: var(--white);
+}
+
+.emptycart_container a{
+  color: orange;
+  margin-left: .2rem;
+}
+
+@media (max-width: 768px){
+  .cart_container {
+    grid-template-columns: 1fr;
+  }
+  .cart_data{
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 568px){
+  
+
+  tbody tr td:nth-child(1){
+    width: 50px;
+  }
+  tbody tr td:nth-child(2){
+    width: 80px;
+  }
+  tbody tr td:nth-child(3){
+    display: none;
+  }
+  tbody tr td:nth-child(4){
+    width: 20%;
+  }
+  tbody tr td:nth-child(4) span{
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .cart-image {
+    width: 60px;
+    height: 60px;
+  }
+
+
+}
